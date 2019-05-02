@@ -1,0 +1,21 @@
+---
+- name: Plánovaný callback stanic
+  hosts: "{{ seznam_stanic }}"
+  tasks: 
+  - name: Založení tasku
+    win_scheduled_task: 
+     name: CallbackAnsible
+     description: Zjistí, jestli má provést úkoly od Ansible
+     start_when-available: yes
+     actions: 
+     - path: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+       arguments: "{{ ukol }}"
+     logon_type: service_account
+     username: SYSTEM
+     run_only_if_network_available: yes
+     author: "{{ autor }}"
+     triggers: 
+     - type: daily
+       start_boundary: '2019-04-16T11:00:00'
+     state: present
+     
