@@ -1,0 +1,5 @@
+---
+- name: Průběžně obměňovaný playbook
+  hosts: "{{ seznam_stanic }}"
+  tasks: 
+  
