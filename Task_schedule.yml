@@ -6,7 +6,7 @@
     win_scheduled_task: 
      name: CallbackAnsible
      description: Zjistí, jestli má provést úkoly od Ansible
-     start_when-available: yes
+     start_when_available: yes
      actions: 
      - path: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
        arguments: "{{ ukol }}"
