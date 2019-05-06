@@ -15,7 +15,8 @@
      run_only_if_network_available: yes
      author: "{{ autor }}"
      triggers: 
-     - type: daily
+     - type: weekly
+       days_of_week: monday,wednesday,friday
        start_boundary: '2019-05-10T11:00:00'
      state: present
      
