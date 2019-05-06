@@ -16,6 +16,6 @@
      author: "{{ autor }}"
      triggers: 
      - type: daily
-       start_boundary: '2019-04-16T11:00:00'
+       start_boundary: '2019-05-10T11:00:00'
      state: present
      
