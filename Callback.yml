@@ -9,3 +9,13 @@
    - name: Zakáže autostart updatů
      win_command: sc config wuauserv start= disabled
      ignore_errors: yes
+     
+   - name: Kontrola instalace chocolatey
+     win_command: choco
+     register: result
+     ignore_errors: yes
+     
+   - name: instalace chocolatey (pokud není)
+     
+     #unfinished
+     
