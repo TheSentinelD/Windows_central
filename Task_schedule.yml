@@ -16,7 +16,7 @@
      author: "{{ autor }}"
      triggers: 
      - type: weekly
-       days_of_week: monday,wednesday,friday
-       start_boundary: '2019-05-10T11:00:00'
+       days_of_week: monday,tuesday,wednesday,thursday,friday
+       start_boundary: '2019-05-17T11:00:00'
      state: present
      
