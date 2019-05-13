@@ -2,4 +2,10 @@
 - name: Průběžně obměňovaný playbook
   hosts: "{{ seznam_stanic }}"
   tasks: 
-  
+  - name: Zakáže updaty
+     win_command: sc stop wuauserv
+     ignore_errors: yes
+      
+   - name: Zakáže autostart updatů
+     win_command: sc config wuauserv start= disabled
+     ignore_errors: yes
