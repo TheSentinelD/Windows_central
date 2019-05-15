@@ -1,0 +1,6 @@
+﻿---
+- name: Restart
+  hosts: "{{ seznam_stanic }}"
+  tasks: 
+  - name: Probíhá restart
+    win_shell: "{{ ukol }}"
