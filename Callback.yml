@@ -22,7 +22,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src1 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest1 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -34,7 +34,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src2 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest2 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -46,7 +46,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src3 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest3 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -58,7 +58,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src4 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest4 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -70,7 +70,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src5 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest5 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -82,7 +82,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src6 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest6 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -94,7 +94,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src7 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest7 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -106,7 +106,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src8 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest8 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -118,7 +118,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src9 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest9 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
@@ -130,7 +130,7 @@
    - name: instalace fontů
      win_copy: 
       src: "{{ cesta_src10 }}"
-      dest: "{{ cesta_dest }}"
+      dest: "{{ cesta_dest10 }}"
       remote_src: yes
      vars: 
       ansible_become: yes
